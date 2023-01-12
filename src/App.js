@@ -21,10 +21,42 @@ const stages = [
 function App() {
 
   const [gameStage, setGameStage] = useState(stages[0].name)
-  const[words] = useState(wordsList)
+  const [words] = useState(wordsList)
+
+  const [pickedWord, setPickedWord] = useState("")
+  const [pickedCategory, setPickedCategory] = useState("")
+  const [letters, setLetter] = useState([])
+
+  const pickWordandCategory = () => {
+    const categories = Object.keys(words)
+    const category = categories[Math.floor(Math.random() * Object.keys(categories).length)]
+    console.log(category)
+
+    const word = words[category][Math.floor(Math.random() * words[category].length)]
+    console.log(word)
+
+    return {word, category}
+  }
 
   const startGame = () => {
+    
+    const {word, category} = pickWordandCategory()
+    console.log(word,category)
+
+    let wordLetter = word.split("")
+
+    wordLetter = wordLetter.map((l) => l.toLowerCase())
+    console.log(wordLetter)
+    
+    setPickedWord(word)
+    setPickedCategory(category)
+    setLetter(letters)
+
     setGameStage(stages[1].name)
+  }
+
+  const verifyLetter = () => {
+    setGameStage(stages[2].name)
   }
 
   const exitGame = () => {
@@ -35,8 +67,8 @@ function App() {
     <div className="App">
       <div>
         {gameStage === 'start' && <StartScreen startGame={startGame}/>}
-        {gameStage === 'game' && <GameScreen exitGame={exitGame}/>}
-        {gameStage === 'end' && <GameOver />}
+        {gameStage === 'game' && <GameScreen exitGame={exitGame} verifyLetter={verifyLetter}/>}
+        {gameStage === 'end' && <GameOver exitGame={exitGame}/>}
       </div>
     </div>
   );

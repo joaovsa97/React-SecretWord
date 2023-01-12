@@ -9,25 +9,26 @@
   font-weight: bold;
 }
 
-p {
+.content p {
   font-size: 1.2rem;
   margin-bottom: 80px;
 }
 
-button{
-    cursor: pointer;
-    border-radius: 50px;
-    background-color: black;
-    padding: 10px 100px;
 
-    color: white;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: 800;
-    font-family: 'Courier New', Courier, monospace;
+button{
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: black;
+  padding: 5px 30px;
+  margin: 10px;
+
+  color: white;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 button:hover{
-    opacity: 0.8;
-    border: 2px solid white;
+  opacity: 0.8;
+  border: 2px solid white;
 }

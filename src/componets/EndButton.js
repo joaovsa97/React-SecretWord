@@ -1,8 +1,9 @@
 
-const EndButton = ({exitGame}) => {
+const EndButton = ({exitGame, name}) => {
+
   return (
     <div>
-      <button className="end-now" onClick={exitGame}>Desistir</button>
+      <button className="end-now" onClick={exitGame}>{name}</button>
     </div>
   );
 };
