@@ -1,13 +1,8 @@
 html,
 body {
   height: 100%;
-}
-
-body {
+  background: linear-gradient(360deg, #06040f 0%, #28828a 50%, #ffff 100%);
   font-family: "Courier New", Courier, monospace;
   margin: 0;
   padding: 0;
-  background: linear-gradient(360deg, #06040f 0%, #28828a 50%, #ffff 100%);
-  background-size: contain;
-  background-repeat: no-repeat;
 }
