@@ -3,6 +3,7 @@ export const wordsList = {
     fruta: ["Banana","Maçã","Pêra","Mamão","Laranja"],
     corpo: ["Braço","Perna","Cérebro","Pescoço","Olhos"],
     computador: ["Mouse","Teclado","Monitor","Gabinete"],
-    programador: ["Linguagem","Framework","JavaScript","React"],
+    //programador: ["Linguagem","Framework","JavaScript","React"],
     alimento: ["Arroz","Feijão","Carne","Leite","Ovo"],
+    casa: ["Porta","Janela","Sofá","Televisão","Prato"],
 };
