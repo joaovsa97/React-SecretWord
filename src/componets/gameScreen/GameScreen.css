@@ -56,7 +56,7 @@ form {
 }
 
 .wrongLettersContainer{
-  color: red
+  color: rgb(212, 0, 64)
 }
 
 @media screen and (max-width: 800px) {
