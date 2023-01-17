@@ -8,6 +8,6 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(360deg, #06040f 0%, #28828a 50%, #ffff 100%);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
