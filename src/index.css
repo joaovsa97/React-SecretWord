@@ -1,5 +1,6 @@
 html,
 body {
+  box-sizing: border-box;
   height: 100%;
   background: linear-gradient(360deg, #06040f 0%, #28828a 50%, #ffff 100%);
   font-family: "Courier New", Courier, monospace;
