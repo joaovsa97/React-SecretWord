@@ -59,15 +59,20 @@ function App() {
 
     //normalize to lower case
     wordLetter = wordLetter.map((l) => l.toLowerCase());
-    console.log(wordLetter);
 
     setGuesses(GuessesQty);
     setPickedWord(word);
     setPickedCategory(category);
     setLetter(wordLetter);
 
-    setGameStage(stages[1].name);
   }, [pickWordandCategory]);
+
+  const start = () => {
+    setScore(0)
+    startGame()
+
+    setGameStage(stages[1].name);
+  }
 
   const verifyLetter = (letter) => {
     const normalizedLetter = letter.toLowerCase();
@@ -138,7 +143,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        {gameStage === "start" && <StartScreen startGame={startGame} />}
+        {gameStage === "start" && <StartScreen startGame={startGame} start={start}/>}
         {gameStage === "game" && (
           <GameScreen
             exitGame={exitGame}
