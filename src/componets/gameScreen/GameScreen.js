@@ -4,6 +4,7 @@ import "./GameScreen.css";
 
 const GameScreen = ({
   exitGame,
+  finishGame,
   verifyLetter,
   pickedWord,
   pickedCategory,
@@ -69,7 +70,7 @@ const GameScreen = ({
         ))}
       </div>
       <div className="buttons">
-        <button onClick={verifyLetter}>Finalizar jogo</button>
+        <button onClick={finishGame}>Finalizar jogo</button>
         <EndButton exitGame={exitGame} name="Desistir" />
       </div>
     </div>

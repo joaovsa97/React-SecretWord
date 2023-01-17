@@ -101,6 +101,10 @@ function App() {
     setWrongLetters([]);
   };
 
+  const finishGame = () => {
+    setGuesses(0)
+  }
+
   //check if guesses ended(lose)
   useEffect(() => {
     if (guesses <= 0) {
@@ -139,6 +143,7 @@ function App() {
           <GameScreen
             exitGame={exitGame}
             verifyLetter={verifyLetter}
+            finishGame={finishGame}
             pickedWord={pickedWord}
             pickedCategory={pickedCategory}
             letters={letters}
