@@ -7,5 +7,5 @@ export const wordsList = {
     alimento: ["Arroz","Feijão","Carne","Leite","Ovo","Macarrão", "Açaí", "Aveia"],
     casa: ["Porta","Janela","Sofá","Televisão","Prato"],
     esporte: ["Futebol", "Basquete", "Vôlei", "Skate", "Handebol"],
-    "time de futebol": ["Flamengo", "Vasco", "São Paulo", " Fluminense", "Vitória"]
+    "time de futebol": ["Flamengo", "Vasco", "São Paulo", "Fluminense", "Vitória"]
 };
