@@ -12,6 +12,7 @@ const StartScreen = ({ start }) => {
           <p>-Você terá 3 tentativas para acertar a palavra.</p>
           <p>-Sempre que acertar, sua pontuação será acrescida e suas chances resetadas.</p>
           <p>-AS PALAVRAS COM ACENTUAÇÃO GRÁFICA EXIGEM A MESMA(Ex.: à, é, ê, ô, etc.).</p>
+          <p>-PALAVRAS QUE POSSUEM ESPAÇOES TAMBÉM EXIGEM O MESMO(Ex.:São Paulo)</p>
         </span>
       </div>
     </div>
