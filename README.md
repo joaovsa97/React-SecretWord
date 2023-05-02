@@ -1,3 +1,11 @@
+# React Secret Word
+This is a game project made with React.js, with study pourposes. The base came from a course from Udemy.
+
+# Project link
+```
+https://secword.netlify.app/
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
